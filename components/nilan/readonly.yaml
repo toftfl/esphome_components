@@ -4,6 +4,13 @@ external_components:
 
 nilan:
 
+binary_sensor:
+  - platform: modbus_controller
+    modbus_controller_id: nilan_modbus_controller
+    name: "Defrost function active"
+    id: nilan_defrost_function_active
+    register_type: holding
+    address: 125
 
 sensor:
 #########################
@@ -112,10 +119,3 @@ sensor:
     address: 1204
     filters:
       - multiply: 0.01
-
-  - platform: modbus_controller
-    modbus_controller_id: nilan_modbus_controller
-    name: "Defrost function active"
-    id: nilan_defrost_function_active
-    register_type: holding
-    address: 125
