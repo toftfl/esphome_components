@@ -1,0 +1,419 @@
+# Nilan - code for the custom-button card. Should be pasted into the card.
+type: picture-elements
+image: /local/nilan/nilan.png
+elements:
+  - type: custom:button-card
+    show_name: false
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_udeluft_temperatur
+    style:
+      top: 8.0%
+      left: 31.5%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    state:
+      - value: 0
+        operator: <=
+        styles:
+          card:
+            - filter:
+                - >-
+                  drop-shadow(0px 0px 8px blue) drop-shadow(0px 0px 8px blue)
+                  drop-shadow(0px 0px 5px white)
+        icon: mdi:snowflake
+    styles:
+      state:
+        - font-size: 15px
+        - filter: null
+      icon:
+        - width: 1%
+        - filter:
+            - drop-shadow(2px 2px 2px black)
+  - type: custom:button-card
+    show_name: false
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_afkast_temperatur
+    style:
+      top: 8.0%
+      left: 69.5%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      state:
+        - font-size: 15px
+        - filter: null
+  - type: custom:button-card
+    show_name: false
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_udsug_temperatur
+    style:
+      top: 65.0%
+      left: 31.5%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      state:
+        - font-size: 15px
+        - filter: null
+  - type: custom:button-card
+    show_name: false
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_indblaes_temperatur
+    style:
+      top: 65.0%
+      left: 69.5%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      state:
+        - font-size: 15px
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    name: Eff.
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_heat_exchange_efficiency
+    style:
+      top: 26.0%
+      left: 50.0%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      state:
+        - font-size: 15px
+  - type: custom:button-card
+    show_name: false
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_fugtighed
+    style:
+      top: 72.0%
+      left: 50.5%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      state:
+        - font-size: 15px
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    name: Effekt
+    show_state: true
+    show_icon: false
+    entity: sensor.genvex_power_watt
+    style:
+      top: 85.0%
+      left: 28.0%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      name:
+        - font-weight: null
+        - font-size: 14px
+        - color: black
+        - align-self: null
+        - justify-self: null
+        - padding-bottom: 6px
+        - filter: null
+      state:
+        - font-size: 14px
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    name: Udsug
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_exhaust_fan_speed
+    style:
+      top: 49.0%
+      left: 23.0%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      name:
+        - font-weight: null
+        - font-size: 12px
+        - color: black
+        - align-self: null
+        - justify-self: null
+        - padding-bottom: 6px
+        - filter: null
+      state:
+        - font-size: 12px
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    name: Indblæs
+    show_state: true
+    show_icon: false
+    entity: sensor.comfort300_inlet_fan_speed
+    style:
+      top: 49.0%
+      left: 77%
+      width: 12%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    styles:
+      name:
+        - font-weight: null
+        - font-size: 12px
+        - color: black
+        - align-self: null
+        - justify-self: null
+        - padding-bottom: 6px
+        - filter: null
+      state:
+        - font-size: 12px
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    show_state: false
+    show_icon: false
+    entity: binary_sensor.comfort300_bypass_open
+    style:
+      top: 40%
+      left: 50.0%
+      width: 22%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    state:
+      - value: 'off'
+        color: white
+        name: Varmedrift
+      - value: 'on'
+        color: white
+        name: Køling
+    styles:
+      name:
+        - font-weight: null
+        - font-size: 12px
+        - color: black
+        - align-self: null
+        - justify-self: null
+        - padding-bottom: 1px
+        - filter: null
+      state:
+        - font-size: 12px
+        - filter: null
+  - entity: binary_sensor.comfort300_is_summer
+    state_filter:
+      Sommerdrift: brightness(100%)  saturate(1)
+      SommerdriftX: brightness(90%) saturate(1.2)
+      Vinterdrift: brightness(100%)  saturate(1)
+      VinterdriftX: brightness(50%) hue-rotate(45deg)
+    state_image:
+      'on': mdi:snowflake
+      'off': mdi:snowflake
+    style:
+      left: 30%
+      top: 50%
+      color: white
+    type: image
+  - type: custom:button-card
+    show_name: true
+    entity: binary_sensor.comfort300_is_summer
+    icon: mdi:snowflake
+    style:
+      top: 18.0%
+      left: 12.0%
+      width: 20%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    state:
+      - value: 'off'
+        color: lightblue
+        name: Vinterdrift
+        icon: mdi:snowflake
+      - value: 'on'
+        color: null
+        name: Sommerdrift
+        icon: mdi:sun-angle-outline
+    styles:
+      name:
+        - font-size: 15px
+        - color: black
+        - font-weight: null
+        - padding-top: 5px
+        - padding-bottom: 5px
+        - filter: null
+      icon:
+        - filter: null
+  - type: custom:button-card
+    show_name: true
+    entity: binary_sensor.comfort300_air_filter_alarm_ver2
+    icon: mdi:air-filter
+    style:
+      top: 85%
+      left: 70%
+      width: 15%
+    card_mod:
+      style: |
+        ha-card {
+          top: -126px;
+          left: -0.15px;
+          border: none;
+          border-radius: 20px;
+          background: rgba(222, 260, 260, 0.0);
+        }
+    state:
+      - value: 'on'
+        color: orange
+        name: Skift filter
+        styles:
+          name:
+            - font-size: 12px
+          card: null
+          icon:
+            - animation:
+                - blink 2s linear infinite
+      - value: 'off'
+        color: green
+        name: Filter Ok
+        styles:
+          name:
+            - font-size: 12px
+    styles:
+      name:
+        - font-size: 12px
+        - font-weight: null
+        - font-size: null
+        - color: black
+        - align-self: null
+        - justify-self: null
+        - padding-bottom: null
+        - filter: null
+      icon:
+        - filter: null
+  - type: conditional
+    conditions:
+      - entity: binary_sensor.ncomfort300_defrost_function_active
+        state: 'on'
+    elements:
+      - type: custom:button-card
+        show_name: true
+        entity: binary_sensor.comfort300_defrost_function_active
+        entity_picture: /local/nilan/defrost_vent.png
+        show_entity_picture: true
+        style:
+          top: 85%
+          left: 50%
+          width: 20%
+        card_mod:
+          style: |
+            ha-card {
+              top: -126px;
+              left: -0.15px;
+              border: none;
+              border-radius: 20px;
+              background: rgba(222, 260, 260, 0.0);
+            }
+        state:
+          - value: 'on'
+            name: Afrimer
+            styles:
+              card:
+                - animation:
+                    - blink 2s linear infinite
+        styles:
+          name:
+            - font-weight: null
+            - font-size: null
+            - show_name: true
+            - font-size: 12px
+            - color: black
+            - align-self: null
+            - justify-self: null
+            - padding-bottom: null
+            - filter: null
+          icon:
+            - filter: null
