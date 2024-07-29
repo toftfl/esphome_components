@@ -1,4 +1,4 @@
-# Nilan - code for the custom-button card. Should be pasted into the card.
+# Nilan - code for the picture-element / custom-button card. Should be pasted into the card.
 type: picture-elements
 image: /local/nilan/nilan.png
 elements:
